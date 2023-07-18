@@ -21,14 +21,21 @@
 
 const eventoFuturo = (res) => {
     return new Promise ((resolve, reject) => {
-        if (res === true) {
-            resolve("Promesa resuelta");
-        } else {
-            reject("Promesa rechazada");
-        }
+       setTimeout(() => {
+            res === true ? resolve("Promesa resuelta") : reject ("Promesa rechazada");
+       }, 2000);
     })
 }
 
 const valor = true;
 
-console.log(eventoFuturo(valor) );
+eventoFuturo(valor)
+    .then((respuesta) => {
+        console.log(respuesta)
+    })
+    .catch((respuesta) => {
+        console.log(respuesta)
+    })
+    .finally (() => {
+        console.log("Finalizo el proceso");
+    })
