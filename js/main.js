@@ -19,23 +19,24 @@
 //     }
 // }, 1000);
 
-const eventoFuturo = (res) => {
-    return new Promise ((resolve, reject) => {
-       setTimeout(() => {
-            res === true ? resolve("Promesa resuelta") : reject ("Promesa rechazada");
-       }, 2000);
-    })
-}
+// const eventoFuturo = (res) => {
+//     return new Promise ((resolve, reject) => {
+//        setTimeout(() => {
+//             res === true ? resolve("Promesa resuelta") : reject ("Promesa rechazada");
+//        }, 2000);
+//     })
+// }
 
-const valor = true;
+// const valor = true;
 
-eventoFuturo(valor)
-    .then((respuesta) => {
-        console.log(respuesta)
-    })
-    .catch((respuesta) => {
-        console.log(respuesta)
-    })
-    .finally (() => {
-        console.log("Finalizo el proceso");
-    })
+// eventoFuturo(valor)
+//     .then((respuesta) => {
+//         console.log(respuesta)
+//     })
+//     .catch((respuesta) => {
+//         console.log(respuesta)
+//     })
+//     .finally (() => {
+//         console.log("Finalizo el proceso");
+//     })
+
